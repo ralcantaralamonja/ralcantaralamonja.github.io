@@ -74,7 +74,16 @@ section{
 }
 
 .songs{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
 	margin-bottom: -70px;
+
+}
+
+#padre{
+	/* margin: 0 -15px; */
 }
 
 .song{
@@ -87,6 +96,7 @@ section{
 	margin-bottom: 20px;
 	position: relative;
 	transition: all 0.3 ease;
+	
 }
 
 .repo-song-file img{
@@ -105,12 +115,12 @@ section{
 }
 
 .song h3{
+	font-family: 'Barlow', sans-serif;
 	color: #010100;
-	font: 25px;
+	font-size: 25px;
 	text-transform: capitalize;
 	font-weight: 400;
-	font-family: 'Barlow', sans-serif;
-	transition: all 0.4 ease-in-out;
+	padding: 2.3px;
 }
 
 .song h3 a{
@@ -131,7 +141,7 @@ a:hover{
 .carousel-inner img{
     max-width: 200vh;
     object-fit: cover;
-}
+} 
 .padded{
     padding-top: 90px;
     padding-bottom: 90px;
@@ -150,6 +160,88 @@ a:hover{
 #responsive{
 	background-color: rgba(245,89,164,255);
 }
+
+/* Guerson Aarom */
+/* carousel  */
+.innerpage{
+	text-align: center;
+	margin-bottom: 62px;
+}
+.innerpage-thumb{
+	margin-bottom: 20px;
+	position: relative;
+	transition: all 0.3s ease;
+}
+.innerpage-thumb > img{
+	width: 100%;
+}
+.innerpages{
+	 margin-bottom: -70px;
+}
+
+.innerpages.innerpage-slider.row.slick-initialized.slick-slider.slick-dotted {}
+.innerpage-slider .innerpage{
+	margin-bottom: 130px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.innerpage-slider .innerpage .innerpage-thumb{
+	margin-bottom: 0;
+	box-shadow: 0 0 20px rgb(0 0 0 /10%);	
+}
+img{
+	vertical-align: middle;
+	height: auto;
+}
+
+.col-lg-4{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+.slick-dots{
+	bottom: 30px;
+	
+}
+.slick-dots li{
+	margin-right: 12px;
+}
+
+.slick-dots li button{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #f559a4;
+}
+
+.slick-slide-control07{
+	display: none;
+}
+
+.slick-dots li:last-child{
+	display: none;
+}
+
+
+.slick-dots li.slick-active button{
+	background-color:#00b9c6;
+	
+}
+.slick-dots li.slick-active button::before{
+	color: transparent;
+}
+
+.slick-dots li button::before{
+	color: transparent;
+}
+
+
+/*carousel end*/
+/* End Guerson Leon*/
+
+
+
 #david {
     position: relative;
     top: 1%;
@@ -204,3 +296,74 @@ a:hover{
         #container {background-position: center;}
         #container {padding: 0 150px;}
     }
+
+	footer{
+		display: block;
+		margin: 0;
+		border: 0;
+		font: inherit;
+		width: 100%;
+	}
+	
+	.footer1{
+		background-color: #000000;
+		padding: 87px 0;
+	}
+	
+	.caja1 {
+		padding: 0 15px;
+		text-align: center;
+	}
+	
+	.caja2 {
+		text-align: center;
+	}
+	
+	.caja2 img{
+		margin-bottom: 55px;
+	}
+	
+	.buy {
+		display: inline-block;
+		color: #fff;
+		font-size: 20px;
+		height: 60px;
+		line-height: 58px;
+		font-weight: 700;
+		padding: 0 35px;
+		border-radius: 30px;
+		border: 1px solid #fff;
+		margin-bottom: 20px;
+	}
+	
+	a{
+		text-decoration: none;
+		background-color: transparent;
+		touch-action: manipulation;
+	}
+	
+	.buy:hover{
+		background-color: #fff;
+		transition: background-color 1s;
+	}
+	@media (max-width: 1700px){
+		#container {height: 160vh;}
+	
+	}
+	@media (max-width: 1200px){
+		#container {background-position: center;}
+		#container {padding: 0 10px;}
+		#container {height: 160vh;}
+		#david {position: relative;}
+		#david {top: 1%;}
+		#david {left: 3%;}
+		#david img {margin: 2%;}
+		}
+	@media (max-width: 768px){
+		#container {height: 170vh;}
+		#david {top: 1%;}
+		#david {left: 2%;}
+		}
+	@media (max-width: 576px){
+		#container {height: 140vh;}
+	}
