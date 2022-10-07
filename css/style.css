@@ -305,7 +305,7 @@ img{
 }
 
 #david {
-    background-image: url(/img/img.jpg);
+    background-image: url(../img/img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0 120px;
